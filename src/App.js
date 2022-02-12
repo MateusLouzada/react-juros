@@ -1,8 +1,8 @@
 import './App.css';
-import React, { useEffect } from 'react';
+import React, {useState} from 'react';
 import Input from './Inputs';
-import { Box } from '@mui/material'
-import {useState} from 'react';
+import { Box } from '@mui/material';
+import CardTotal from './CardTotal';
 
 function App() {
 
@@ -17,6 +17,7 @@ function App() {
   return (
     <Box sx={{width: '100vw', height: '100vh'}}>
       <Input handleMontante={handleMontante} handleJuros={handleJuros} handlePeriodo={handlePeriodo} />
+      <CardTotal montante={montante} juros={juros} periodo={periodo} />
     </Box>
   );
 }

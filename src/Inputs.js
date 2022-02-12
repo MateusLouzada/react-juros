@@ -12,13 +12,11 @@ export default function inputs({ handleMontante, handleJuros, handlePeriodo }) {
 
         <Box sx={{
             display: 'flex',
-            alignSelf: 'center',
-            justifyContent: 'center',
-            alignItems: 'center',
+            justifyContent: 'center',    
             width: '100%',
-            height: '100%'
+            height: '40%'
         }}>
-            <Box sx={{ display: 'flex', width: '60%', justifyContent: "space-around" }}>
+            <Box sx={{ display: 'flex', alignSelf: "center", width: "50%", justifyContent: "space-evenly" }}>
                 <TextField id="standard-basic" label="Montante Inicial" variant="standard" onChange={pegarMontante} />
                 <TextField id="standard-basic" label="Taxa de Juros Mensal" variant="standard" onChange={pegarJuros}/>
                 <TextField id="standard-basic" label="Período(Meses)" variant="standard" onChange={pegarPeriodo} />
