@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/MateusLouzada/react-juros/static/css/main.073c9b0a.css",
+    "main.js": "/MateusLouzada/react-juros/static/js/main.e8b830cd.js",
+    "index.html": "/MateusLouzada/react-juros/index.html",
+    "main.073c9b0a.css.map": "/MateusLouzada/react-juros/static/css/main.073c9b0a.css.map",
+    "main.e8b830cd.js.map": "/MateusLouzada/react-juros/static/js/main.e8b830cd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.e8b830cd.js"
+  ]
+}
