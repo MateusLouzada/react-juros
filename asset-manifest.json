@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/react-juros/static/css/main.073c9b0a.css",
-    "main.js": "/react-juros/static/js/main.e8b830cd.js",
+    "main.js": "/react-juros/static/js/main.7b41eaed.js",
     "index.html": "/react-juros/index.html",
     "main.073c9b0a.css.map": "/react-juros/static/css/main.073c9b0a.css.map",
-    "main.e8b830cd.js.map": "/react-juros/static/js/main.e8b830cd.js.map"
+    "main.7b41eaed.js.map": "/react-juros/static/js/main.7b41eaed.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.e8b830cd.js"
+    "static/js/main.7b41eaed.js"
   ]
 }
