@@ -15,7 +15,7 @@ export default function CardTotal({ montante, juros, periodo }) {
 
     saldoTotal = saldoTotal + saldoTotal * (0.01 * parseFloat(juros));
     rendimento = saldoTotal * (0.01 * parseFloat(juros));
-    saldoTotal > parseFloat(montante) ? porcentagem = ((saldoTotal / parseFloat(montante)) - 1) * 100 : porcentagem = -1 * (((parseFloat(montante) / saldoTotal) - 1) * 100);
+    saldoTotal > parseFloat(montante) ? porcentagem = ((saldoTotal / parseFloat(montante)) - 1) * 100 : porcentagem = ((parseFloat(montante) - saldoTotal) * 100) / parseFloat(montante);
 
     if(isNaN(porcentagem)) porcentagem = 0;
     
@@ -38,7 +38,7 @@ export default function CardTotal({ montante, juros, periodo }) {
               <Typography sx={rendimento >= 0 ? {color: "success.main"} : {color: "error.main"}}>
                  {rendimento > 0 ? '+' : ''}{rendimento.toFixed(2)}
               </Typography>
-              <Typography sx={porcentagem >= 0 ? {color: "primary.main"} : {color: "error.main"}}>
+              <Typography sx={saldoTotal > parseFloat(montante) ? {color: "primary.main"} : {color: "error.main"}}>
                 {porcentagem.toFixed(2)}%
               </Typography>
             </CardContent>
